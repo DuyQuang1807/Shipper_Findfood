@@ -1,0 +1,95 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    z    <style name="Theme.DELIVERY" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorPrimaryVariant">@color/cam</item>
+    <item name="colorAccent">@color/colorAccent</item>
+</style>
+
+    <style name="floatingbutton">foating
+        <item name="colorPrimary">#ff6f00</item>
+        <item name="colorPrimaryVariant">#3700B3</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#ff6f00</item>
+        <item name="colorSecondaryVariant">#018786</item>
+        <item name="colorOnSecondary">@color/white</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.Design.Tab">
+
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+    <style name="viewParent">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+
+    <style name="viewParent.headerText">
+
+        <item name="android:textColor">#020000</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="viewParent.headerText.settingsMiniTitle">
+
+        <item name="android:textColor">#5D5C5C</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginTop">20dp</item>
+
+    </style>
+
+    <style name="viewParent.chipBar">
+
+        <item name="android:textColor">#000</item>
+
+    </style>
+
+    <style name="settingsText" parent="viewParent.headerText.settingsMiniTitle">
+
+        <item name="android:textColor">#2A2E43</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">20dp</item>
+
+    </style>
+
+    <style name="viewParent.headerText.settingsTextIcon" parent="settingsText">
+
+        <item name="android:drawableRight">@drawable/ic_more</item>
+
+    </style>
+
+    <style name="foating" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/cam</item>
+        <item name="colorPrimaryVariant">@color/cam</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+
+        <item name="colorSecondary">#D3D3D3</item>
+        <item name="colorSecondaryVariant">#018786</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+</resources>

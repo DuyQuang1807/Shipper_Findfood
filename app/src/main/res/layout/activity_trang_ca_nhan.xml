@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Activity.TrangCaNhanActivity">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="234dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="100dp"
+            android:layout_toEndOf="@+id/back"
+            android:gravity="center"
+            android:text="Cài Đặt"
+            android:textColor="@color/cam"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_arrow_back_black1_24dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        tools:context=".View.User.TrangCaNhan">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="30dp">
+
+            <RelativeLayout
+                android:id="@+id/edtEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/profileCircleImageView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/logoapp1" />
+
+                <TextView
+                    android:id="@+id/usernameTextView"
+                    style="@style/viewParent.headerText"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/profileCircleImageView"
+                    android:text="Duc Thien"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/email"
+                    style="@style/viewParent.headerText"
+                    android:layout_below="@id/usernameTextView"
+                    android:layout_toRightOf="@id/profileCircleImageView"
+                    android:fontFamily="@font/calibri_regular"
+                    android:text="buiducthien.dtu@gmail.com"
+                    android:textColor="#5D5C5C"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    style="@style/viewParent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_more" />
+
+            </RelativeLayout>
+
+<!--            <Switch-->
+<!--                android:id="@+id/darkModeSwitch"-->
+<!--                style="@style/settingsText"-->
+<!--                android:checked="false"-->
+<!--                android:drawableLeft="@drawable/ic_dark_mode"-->
+<!--                android:text="Dark Mode" />-->
+
+            <TextView
+                style="@style/viewParent.headerText.settingsMiniTitle"
+                android:text="Profile" />
+
+            <TextView
+                android:id="@+id/txteditprofile"
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableLeft="@drawable/ic_edit_profile"
+                android:text="Chỉnh Sửa Thông Tin Người Dùng" />
+
+            <TextView
+                android:id="@+id/txtchangepassword"
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_edit_password"
+                android:text="Thay Đổi Mật Khẩu" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtMesenger"-->
+<!--                style="@style/viewParent.headerText.settingsTextIcon"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:drawableLeft="@drawable/messenger"-->
+<!--                android:text="Nhắn Tin" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtYeuThich"-->
+<!--                style="@style/viewParent.headerText.settingsTextIcon"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:drawableLeft="@drawable/ic_favorite"-->
+<!--                android:text="Món Ăn Ưa Thích" />-->
+
+<!--            <TextView-->
+<!--                style="@style/viewParent.headerText.settingsMinaiTitle"-->
+<!--                android:text="Thông báo" />-->
+
+<!--            <Switch-->
+<!--                style="@style/settingsText"-->
+<!--                android:checked="true"-->
+<!--                android:drawableLeft="@drawable/ic_notifications"-->
+<!--                android:text="Thông Báo" />-->
+
+            <TextView
+                style="@style/viewParent.headerText.settingsMiniTitle"
+                android:text="Regional" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtmap"-->
+<!--                style="@style/viewParent.headerText.settingsTextIcon"-->
+<!--                android:drawableLeft="@drawable/icons8_maps_48px"-->
+<!--                android:text="Bản Đồ" />-->
+
+            <TextView
+                android:id="@+id/qldh"
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableLeft="@drawable/icons8_order_history_30px"
+                android:text="Quản lý đơn hàng" />
+
+            <TextView
+                android:id="@+id/txtQRCode"
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableLeft="@drawable/qr_code"
+                android:text="Quét Mã QR Code" />
+
+            <TextView
+                android:id="@+id/txtlogout"
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableLeft="@drawable/ic_logout"
+                android:text="Logout" />
+
+
+            <TextView
+                android:id="@+id/txtVersion"
+                style="@style/viewParent.headerText.settingsMiniTitle"
+                android:gravity="center_horizontal"
+                android:text="App ver 2.0.1"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wang.delivery">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="whateverString"
+        android:icon="@drawable/logoapp1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logoapp1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DELIVERY"
+        tools:replace="android:appComponentFactory">
+        <activity
+            android:name=".Activity.HienThiThongTinHoaDonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.testQRCode"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.QuenMatKhauActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.QuanLyDonHangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ThayDoiMatKhauActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TrangCaNhanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.UpLoadCvActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CheckRoleActivity"
+            android:exported="false" /> <!-- tools:replace="android:appComponentFactory" -->
+        <activity
+            android:name=".Activity.DangKyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
